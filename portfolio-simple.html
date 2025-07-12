@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yadnesh Patil - ERP Finance & Operations Consultant</title>
+    <meta name="description" content="Professional ERP Finance & Operations consultant specializing in Microsoft Dynamics 365 F&O with 6+ years of logistics experience.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fafc;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .profile-info h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .profile-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .profile-info p {
+            font-size: 1.1rem;
+            max-width: 500px;
+            opacity: 0.9;
+        }
+        
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            background: #4f46e5;
+            color: white;
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #1e293b;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 60px;
+        }
+        
+        /* Experience */
+        .experience-item {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .experience-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+        
+        .experience-company {
+            color: #4f46e5;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .experience-period {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .experience-achievements {
+            list-style: none;
+        }
+        
+        .experience-achievements li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .experience-achievements li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-category {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .skill-category h3 {
+            color: #1e293b;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .skill-item:last-child {
+            border-bottom: none;
+        }
+        
+        .skill-level {
+            background: #4f46e5;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+        
+        /* Contact */
+        .contact-section {
+            background: white;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .contact-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .contact-item h3 {
+            color: #1e293b;
+            margin-bottom: 10px;
+        }
+        
+        .contact-item a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-info h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h1>Yadnesh Patil</h1>
+                    <h2>ERP Finance & Operations Consultant</h2>
+                    <p>Results-driven ERP Functional Consultant specializing in Microsoft Dynamics 365 Finance & Operations (D365 F&O), with 6+ years of hands-on experience in logistics and supply chain processes.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Transforming logistics expertise into ERP excellence</p>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    My journey began in logistics and supply chain management, where I spent over 6 years mastering end-to-end SCM processes. This foundation has enabled a seamless transition into ERP consulting, where I now specialize in Microsoft Dynamics 365 Finance & Operations. I'm passionate about bridging the gap between complex business processes and technology solutions, helping organizations optimize their operations through strategic ERP implementations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">A career journey from logistics operations to ERP consulting</p>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Associate Consultant – Finance & Operations</div>
+                        <div class="experience-company">Key Dynamics Solutions Pvt. Ltd.</div>
+                        <div class="experience-period">February 2025 – Present | Delhi, India</div>
+                    </div>
+                </div>
+                <ul class="experience-achievements">
+                    <li>Providing functional consulting on D365 F&O across SCM, Procurement, and Inventory modules</li>
+                    <li>Supporting fit-gap analysis, requirement documentation, and UAT scripts</li>
+                    <li>Configured procurement flows including vendors, POs, and invoice matching</li>
+                    <li>Exposure to AX 2012 for comparison of legacy systems and modern ERP architecture</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Senior Executive – Import Operations (CHB)</div>
+                        <div class="experience-company">BDP UGL Global Logistics (India) Pvt. Ltd.</div>
+                        <div class="experience-period">July 2019 – February 2025 | Mumbai, India</div>
+                    </div>
+                </div>
+                <ul class="experience-achievements">
+                    <li>Coordinated end-to-end import clearance activities using company ERP systems</li>
+                    <li>Managed DPD shipments, bonded cargo, and factory de-stuff operations</li>
+                    <li>Collaborated cross-functionally on invoice matching and delivery order processing</li>
+                    <li>Supported junior team members and vendors on system usage and compliance</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Executive – Operations (DDSM)</div>
+                        <div class="experience-company">CMA-CGM Shared Services (India) Pvt. Ltd.</div>
+                        <div class="experience-period">December 2016 – June 2019 | Mumbai, India</div>
+                    </div>
+                </div>
+                <ul class="experience-achievements">
+                    <li>Handled global operations for Detention, Demurrage & Storage Monitoring via ERP tools</li>
+                    <li>Delivered SOPs and SLA matrices for European and Latin American markets</li>
+                    <li>Used process automation tools for workflow tracking and performance KPIs</li>
+                    <li>Managed dispute resolutions, process transition, and internal audits</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Expertise in ERP systems and business process optimization</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>ERP Systems</h3>
+                    <div class="skill-item">
+                        <span>Microsoft Dynamics 365 F&O</span>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>AX 2012</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>D365 Modules</h3>
+                    <div class="skill-item">
+                        <span>Supply Chain Management</span>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Procurement</span>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Inventory Management</span>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Business Skills</h3>
+                    <div class="skill-item">
+                        <span>Requirement Analysis</span>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Process Optimization</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Client Consulting</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Logistics</h3>
+                    <div class="skill-item">
+                        <span>Import/Export Operations</span>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Customs Clearance</span>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span>Cargo Management</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" style="background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic foundation in business management and supply chain</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Post Graduate Diploma (2016-2018)</h3>
+                    <p><strong>Supply Chain Management</strong></p>
+                    <p>Welingkar Institute of Management Development & Research, University of Mumbai</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Master of Commerce (2016-2018)</h3>
+                    <p><strong>Business Management</strong></p>
+                    <p>M.L. Dahanukar College of Commerce, University of Mumbai</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Bachelor of Commerce (2014-2016)</h3>
+                    <p><strong>Commerce</strong></p>
+                    <p>M.L. Dahanukar College of Commerce, University of Mumbai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss how I can help optimize your ERP Finance & Operations processes</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <a href="mailto:yadnesh2696@gmail.com">yadnesh2696@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <a href="tel:+918976191640">+91 8976191640</a>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/yadneshnareshpatil-2696/" target="_blank">linkedin.com/in/yadneshnareshpatil-2696</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>Mumbai, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Yadnesh Patil. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
