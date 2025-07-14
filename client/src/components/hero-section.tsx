@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Download, Mail } from "lucide-react";
-import profileImage from "@assets/WhatsApp Image 2025-07-12 at 3.09.31 PM_1752314224486.jpeg";
+import profileImage from "../../attached_assets/WhatsApp Image 2025-07-12 at 3.09.31 PM_1752314224486.jpeg";
 
 export default function HeroSection() {
   const handleContact = () => {
